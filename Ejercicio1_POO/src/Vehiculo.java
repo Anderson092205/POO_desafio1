@@ -9,14 +9,12 @@ public class Vehiculo{
     private float velocidadMaxima;
     private String estado;  // en servicio o fuera de servicio
 
-    public Vehiculo (String id, int capacidad, float velocidad, String estado){
+    public Vehiculo(String id, int capacidad, float velocidad, String estado) {
+
         this.id = id;
         this.setCapacidadPasajeros(capacidad);
         this.setVelocidadMaxima(velocidad);
-        this.setEstado(estado);
-    }
-
-    public Vehiculo(int id, int capacidad, float velocidad, String estado) {
+        this.estado = (estado != null) ? estado : "desconocido";
     }
 
     //Accedemos a los métodos con get
