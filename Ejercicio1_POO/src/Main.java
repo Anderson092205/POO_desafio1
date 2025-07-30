@@ -1,3 +1,6 @@
+import java.util.ArrayList;
+import java.util.List;
+
 
 public class Main {
     public static void main(String[] args) {
@@ -10,8 +13,11 @@ public class Main {
         Tren tren = new Tren("TREN N001", 100, 120.5f, "en servicio",  6, "eléctrico");
         BicicletaPublica bici = new BicicletaPublica("BICI 001", 1, 25.0f, "en servicio", true,  85);
 
-        System.out.println(bus);
-        System.out.println(tren);
-        System.out.println(bici);
+        List<Vehiculo> flotilla = new ArrayList<>();
+        flotilla.add(bus);
+        flotilla.add(tren);
+        flotilla.add(bici);
+
+        FormularioFlotilla.mostrarEstadoFlotilla(flotilla); //Lo que hice en el FormularioFlotilla
     }
 }
