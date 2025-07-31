@@ -10,8 +10,18 @@ public class Main {
                 "en servicio",
                 "Ruta 42",
                 2);
-        Tren tren = new Tren("TREN N001", 100, 120.5f, "en servicio",  6, "eléctrico");
-        BicicletaPublica bici = new BicicletaPublica("BICI 001", 1, 25.0f, "en servicio", true,  85);
+
+        Tren tren = new Tren("TREN N001",
+                100,
+                120.5f,
+                "en servicio",
+                6, "eléctrico");
+
+        BicicletaPublica bici = new BicicletaPublica("BICI 001",
+                1, 25.0f,
+                "fuera de servicio",
+                true,
+                85);
 
         List<Vehiculo> flotilla = new ArrayList<>();
         flotilla.add(bus);
