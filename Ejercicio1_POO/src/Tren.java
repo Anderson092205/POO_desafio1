@@ -10,25 +10,7 @@ public class Tren extends Vehiculo {
         this.tipoTren = tipo;
     }
 
-    // Getter y setter para numeroVagones
-    public int getNumeroVagones() {
-        return this.numeroVagones;
-    }
 
-    public void setNumeroVagones(int vagones) {
-        if (vagones > 0) {
-            this.numeroVagones = vagones;
-        }
-    }
-
-    // Getter y setter para tipoTren
-    public String getTipoTren() {
-        return this.tipoTren;
-    }
-
-    public void setTipoTren(String tipo) {
-        this.tipoTren = tipo;
-    }
 
     // Método toString sobrescrito
     @Override

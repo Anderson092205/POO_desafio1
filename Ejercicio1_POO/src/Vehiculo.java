@@ -33,6 +33,7 @@ public class Vehiculo{
     }
 
     public void setCapacidadPasajeros(int capacidad) {
+
         if(capacidad > 0) this.capacidadPasajeros = capacidad;
     }
 

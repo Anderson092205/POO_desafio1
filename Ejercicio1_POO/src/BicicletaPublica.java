@@ -10,25 +10,7 @@ public class BicicletaPublica extends Vehiculo {
         this.nivelBateria = bateria;
     }
 
-    // Getter y setter para tieneCesta
-    public boolean getTieneCesta() {
-        return this.tieneCesta;
-    }
 
-    public void setTieneCesta(boolean cesta) {
-        this.tieneCesta = cesta;
-    }
-
-    // Getter y setter para nivelBateria
-    public int getNivelBateria() {
-        return this.nivelBateria;
-    }
-
-    public void setNivelBateria(int bateria) {
-        if (bateria >= 0 && bateria <= 100) {
-            this.nivelBateria = bateria;
-        }
-    }
 
     // Método toString sobrescrito
     @Override
