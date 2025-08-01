@@ -70,5 +70,11 @@ public class FormularioFlotilla {
         System.out.println("Vehículos en servicio: " + enServicio);
         System.out.println("Vehículos fuera de servicio: " + fueraServicio);
         System.out.printf("Porcentaje en servicio: %.2f%%\n", porcentajeServicio);
+
+        //Mostrar el total de vehiculos
+        System.out.println("Total de vehiculos: " + totalVehiculos);
+
+        //Linea final para cerrar visualmente el bloque
+        System.out.println(VERDE + "===========================\n" + RESET);
     }
 }
