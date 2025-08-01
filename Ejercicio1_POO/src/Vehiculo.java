@@ -10,7 +10,7 @@ public class Vehiculo{
     private String estado;  // en servicio o fuera de servicio
 
 
-    //colores
+    //colores para validaciones
     final String RED = "\u001B[31m";
     final String RESET = "\u001B[0m";
 
