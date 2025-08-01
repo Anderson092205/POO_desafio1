@@ -12,7 +12,7 @@ public class BicicletaPublica extends Vehiculo {
 
 
 
-    // Método toString sobrescrito
+    // Metodo toString sobrescrito
     @Override
     public String toString() {
         return "Bicicleta Pública: " +

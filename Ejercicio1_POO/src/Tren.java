@@ -12,7 +12,7 @@ public class Tren extends Vehiculo {
 
 
 
-    // Método toString sobrescrito
+    // Metodo toString sobrescrito
     @Override
     public String toString() {
         return "Tren: " +

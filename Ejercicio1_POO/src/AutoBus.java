@@ -10,7 +10,7 @@ public class AutoBus extends Vehiculo {
         this.numerosPisos = pisos;
     }
 
-    // Método toString sobrescrito para imprimir datos legibles
+    // Metodo toString sobrescrito para imprimir datos legibles
     @Override
     public String toString() {
         return "Autobus " +
