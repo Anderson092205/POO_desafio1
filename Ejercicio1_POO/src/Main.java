@@ -1,11 +1,23 @@
 import java.util.ArrayList;
 import java.util.List;
 
-
 public class Main {
+
     public static void main(String[] args) {
-        AutoBus bus = new AutoBus("\nBUS 001",
-                -40,
+        // Llamamos al metodo auxiliar para obtener la flotilla
+        List<Vehiculo> flotilla = generarFlotillaDePrueba();
+
+        // Mostramos el estado de la flotilla
+        FormularioFlotilla.mostrarEstadoFlotilla(flotilla);
+    }
+
+    // Metodo auxiliar para generar una flotilla de prueba
+    public static List<Vehiculo> generarFlotillaDePrueba() {
+        List<Vehiculo> flotilla = new ArrayList<>();
+
+        // Vehículo con capacidad negativa para activar validación
+        AutoBus bus = new AutoBus("BUS 001",
+                -40, //Capacidad inválida, se mostrará el mensaje en rojo
                 80.0f,
                 "en servicio",
                 "Ruta 42",
@@ -23,11 +35,11 @@ public class Main {
                 true,
                 85);
 
-        List<Vehiculo> flotilla = new ArrayList<>();
+        // Agregamos los vehículos a la lista
         flotilla.add(bus);
         flotilla.add(tren);
         flotilla.add(bici);
 
-        FormularioFlotilla.mostrarEstadoFlotilla(flotilla); //Lo que hice en el FormularioFlotilla
+        return flotilla;
     }
 }
