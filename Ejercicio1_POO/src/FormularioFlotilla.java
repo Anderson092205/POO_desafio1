@@ -35,10 +35,13 @@ public class FormularioFlotilla {
         int fueraServicio = 0;
 
         // Recorremos cada vehículo en la lista
+        int numeroVehiculo = 1;
         for (Vehiculo v : listaVehiculos) {
             // Mostramos la información del vehículo en azul
+            System.out.println(VERDE + "Vehículo #" + numeroVehiculo + RESET);
             System.out.println(AZUL + v.toString() + RESET);
             System.out.println(AMARILLO + "---------------------------" + RESET);
+            numeroVehiculo++;
 
             // Verificamos de qué tipo es el vehículo y sumamos al contador correspondiente
             if (v instanceof AutoBus) {
