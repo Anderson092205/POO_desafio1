@@ -51,10 +51,14 @@ public class FormularioFlotilla {
 
             // Revisamos el estado del vehículo (por ejemplo: "en servicio" o "fuera de servicio")
             String estado = v.getEstado().toLowerCase().trim(); // Convertimos a minúsculas y quitamos espacios
+            // Validamos el estado del vehículo
             if (estado.equals("en servicio")) {
                 enServicio++;
             } else if (estado.equals("fuera de servicio")) {
                 fueraServicio++;
+            } else {
+                // Si el estado no es reconocido, mostramos una advertencia
+                System.out.println(ROJO + "Advertencia: estado desconocido para el vehículo → " + estado + RESET);
             }
         }
 
