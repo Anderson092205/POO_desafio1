@@ -5,7 +5,7 @@ import java.util.List;
 public class Main {
     public static void main(String[] args) {
         AutoBus bus = new AutoBus("\nBUS 001",
-                40,
+                -40,
                 80.0f,
                 "en servicio",
                 "Ruta 42",
